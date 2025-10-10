@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: some-service-account
+  namespace: shield
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: the-bus
+  namespace: shield
+spec:
+  selector:
+    env: marvel
+  ports:
+  - port: 8080
+    targetPort: 8080
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bus-pod
+  namespace: shield
+  labels:
+    env: marvel
+spec:
+  containers:
+  - image: nigelpoulton/k8sbook:shield-01
+    name: bus-ctr
+    ports:
+    - containerPort: 8080
+    imagePullPolicy: Always
