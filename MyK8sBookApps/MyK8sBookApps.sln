@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebAPI", "SimpleWebAPI\SimpleWebAPI.csproj", "{0C47A323-BD02-423C-87FC-37B576A3507E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleWebAPIConsumer", "SimpleWebAPIConsumer\SimpleWebAPIConsumer.csproj", "{86B95724-B383-4AC8-86A6-913625E64E5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "K8s", "K8s", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		deployment.yml = deployment.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C47A323-BD02-423C-87FC-37B576A3507E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C47A323-BD02-423C-87FC-37B576A3507E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C47A323-BD02-423C-87FC-37B576A3507E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C47A323-BD02-423C-87FC-37B576A3507E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B95724-B383-4AC8-86A6-913625E64E5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B95724-B383-4AC8-86A6-913625E64E5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B95724-B383-4AC8-86A6-913625E64E5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B95724-B383-4AC8-86A6-913625E64E5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9C0099D-7A7E-48B3-A3EE-DF56C3C25FC7}
+	EndGlobalSection
+EndGlobal
